@@ -33,6 +33,7 @@ public final class Paciente extends Persona
 	public Paciente(List<Padecimiento> pPadecimientos) {
 		super();
 		// TODO : construct me	
+		System.out.println(8);
 	}
 	
 }
