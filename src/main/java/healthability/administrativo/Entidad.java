@@ -26,7 +26,7 @@ public abstract class Entidad
 	 * @ordered
 	 */
 	
-	private Image foto;
+	private javax.imageio.ImageIO foto;
 	
 
 	/**
@@ -36,7 +36,7 @@ public abstract class Entidad
 	 * @ordered
 	 */
 	
-	public Entidad(String pNombre, Image pImagen) {
+	public Entidad(String pNombre, javax.imageio.ImageIO pImagen) {
 		super();
 		// TODO : construct me	
 	}
