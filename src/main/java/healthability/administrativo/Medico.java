@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.HashSet;
 
+import javax.imageio.ImageIO;
+
 
 /**
  * <!-- begin-user-doc -->
@@ -84,6 +86,20 @@ final class Medico extends Persona
 	 */
 	
 	private static Set<Medico> medicos;
+
+	public Medico(String nombre, ImageIO foto, String cedula, String correo,
+			String especialidad, String slogan, Set<Clinica> dondeTrabaja,
+			Set<String> idiomas, Set<String> afiliaciones,
+			Set<Procedimiento> procedimientos, Set<Educacion> educacion) {
+		super(nombre, foto, cedula, correo);
+		this.especialidad = especialidad;
+		this.slogan = slogan;
+		this.dondeTrabaja = dondeTrabaja;
+		this.idiomas = idiomas;
+		this.afiliaciones = afiliaciones;
+		this.procedimientos = procedimientos;
+		this.educacion = educacion;
+	}
 	
 
 	/**
@@ -93,10 +109,6 @@ final class Medico extends Persona
 	 * @ordered
 	 */
 	
-	public Medico(String pEspecialidad, String pSlogan, List<Clinica> pDondeTrabaja, List<String> pIdiomas, List<String> pAfiliaciones, List<Procedimiento> pProcedimientos, List<Educacion> pEducacicion) {
-		super();
-		// TODO : construct me	
-	}
 	
 }
 

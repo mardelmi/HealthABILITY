@@ -1,5 +1,7 @@
 package healthability.administrativo;
 
+import javax.imageio.ImageIO;
+
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +28,7 @@ public abstract class Persona extends Entidad
 	 */
 	
 	private String correo;
-	
+
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -35,10 +37,10 @@ public abstract class Persona extends Entidad
 	 * @ordered
 	 */
 	
-	public Persona(String pCedula, String pCorreo) {
-		super();
-		// TODO : construct me	
+	public Persona(String nombre, ImageIO foto, String cedula, String correo) {
+		super(nombre, foto);
+		this.cedula = cedula;
+		this.correo = correo;
 	}
-	
 }
 

@@ -1,5 +1,7 @@
 package healthability.administrativo;
 
+import javax.imageio.ImageIO;
+
 
 /**
  * <br>
@@ -27,6 +29,12 @@ public abstract class Entidad
 	 */
 	
 	private javax.imageio.ImageIO foto;
+
+	public Entidad(String nombre, ImageIO foto) {
+		super();
+		this.nombre = nombre;
+		this.foto = foto;
+	}
 	
 
 	/**
@@ -35,11 +43,6 @@ public abstract class Entidad
 	 * @generated
 	 * @ordered
 	 */
-	
-	public Entidad(String pNombre, javax.imageio.ImageIO pImagen) {
-		super();
-		// TODO : construct me	
-	}
 	
 }
 

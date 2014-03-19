@@ -2,6 +2,8 @@ package healthability.administrativo;
 import java.util.Set;
 import java.util.HashSet;
 
+import javax.imageio.ImageIO;
+
 
 /**
  * <!-- begin-user-doc -->
@@ -37,6 +39,13 @@ public final class Clinica extends Entidad
 	 */
 	
 	private static Set<Clinica> clinicas;
+
+	public Clinica(String nombre, ImageIO foto, int codigoClinica,
+			Direccion direccion) {
+		super(nombre, foto);
+		this.codigoClinica = codigoClinica;
+		this.direccion = direccion;
+	}
 	
 
 	/**
@@ -45,11 +54,6 @@ public final class Clinica extends Entidad
 	 * @generated
 	 * @ordered
 	 */
-	
-	public Clinica(Direccion pDireccion) {
-		super();
-		// TODO : construct me	
-	}
 	
 }
 

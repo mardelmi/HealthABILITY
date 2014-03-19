@@ -4,6 +4,8 @@ import java.util.Set;
 import java.util.List;
 import java.util.HashSet;
 
+import javax.imageio.ImageIO;
+
 
 /**
  * <!-- begin-user-doc -->
@@ -21,6 +23,12 @@ public final class Paciente extends Persona
 	 */
 	
 	private Set<Padecimiento> padecimientos;
+
+	public Paciente(String nombre, ImageIO foto, String cedula, String correo,
+			Set<Padecimiento> padecimientos) {
+		super(nombre, foto, cedula, correo);
+		this.padecimientos = padecimientos;
+	}
 	
 
 	/**
@@ -30,11 +38,6 @@ public final class Paciente extends Persona
 	 * @ordered
 	 */
 	
-	public Paciente(List<Padecimiento> pPadecimientos) {
-		super();
-		// TODO : construct me	
-		System.out.println(8);
-	}
 	
 }
 
