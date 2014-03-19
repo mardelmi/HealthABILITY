@@ -1,4 +1,4 @@
-package healthability.administrativo;
+package healthability.aplicacion;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
